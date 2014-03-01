@@ -4,18 +4,20 @@ import cucumber.api.groovy.Hooks
 import cucumber.helpers.MyDSL
 import cucumber.runtime.ScenarioImpl
 import org.openqa.selenium.WebDriver
-import org.openqa.selenium.firefox.FirefoxDriver
 
 this.metaClass.mixin(Hooks)
 
 class CustomWorld {
-    WebDriver driver
-    MyDSL myDSL
+    final WebDriver driver
+    final TestEnvironment testEnvironment
+    final MyDSL myDSL
 
     CustomWorld() {
-        driver = new FirefoxDriver()
+        testEnvironment = new TestEnvironment()
+        driver = testEnvironment.loadEnvironment()
         myDSL = new MyDSL(driver)
     }
+
 }
 
 World {
