@@ -22,6 +22,7 @@ class TestEnvironment {
         // load config file
     }
 
+    @SuppressWarnings("GrMethodMayBeStatic")
     private WebDriver loadSelenium() {
         return new FirefoxDriver()
     }
