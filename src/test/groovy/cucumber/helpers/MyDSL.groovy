@@ -16,10 +16,6 @@ class MyDSL {
         googleHomePage = new GoogleHomePage(driver)
     }
 
-    String aBrownDogJumpedOverPig() {
-        return 'A brown dog jumped over a pig'
-    }
-
     void onGoogleHomePage() {
         googleHomePage.navigateToHomePage()
     }
