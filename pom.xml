@@ -12,6 +12,13 @@
         <groovy.version>2.2.1</groovy.version>
         <selenium.version>2.40.0</selenium.version>
         <cucumber.version>1.1.4</cucumber.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!--
+            Setting the output encoding property to UTF-8 avoids those pesky
+            "File encoding has not been set, using platform encoding ANSI_X3.4-1968,
+            i.e. build is platform dependent!" messages when running integration tests.
+        -->
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
     <build>
         <plugins>
