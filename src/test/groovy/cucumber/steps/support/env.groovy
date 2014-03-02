@@ -26,7 +26,7 @@ World {
 
 Before() {
     println "BEFORE hook called"
-    println "WEB DRIVER SELECTED: ${driver.class}"
+    println "WEB DRIVER SELECTED: ${driver.class.simpleName}"
 }
 
 After() { ScenarioImpl scenario ->
