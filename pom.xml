@@ -22,9 +22,14 @@
                 <executions>
                     <execution>
                         <goals>
-                            <goal>generateStubs</goal>
+                            <!--
+                                Removed the need to generate stubs,
+                                since the project does not compile java
+                                classes.
+                             -->
+                            <!--<goal>generateStubs</goal>-->
                             <goal>compile</goal>
-                            <goal>testGenerateStubs</goal>
+                            <!--<goal>testGenerateStubs</goal>-->
                             <goal>testCompile</goal>
                         </goals>
                     </execution>

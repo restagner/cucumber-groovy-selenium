@@ -1,1 +1,1 @@
-This project is an example showing how one might combine the following frameworks: Cucumber, Groovy and Selenium.
+A project that shows _one way_ of combining the following frameworks: [Cucumber-JVM] (https://github.com/cucumber/cucumber-jvm), [Groovy] (http://groovy.codehaus.org/) and [Selenium] (http://docs.seleniumhq.org/).
