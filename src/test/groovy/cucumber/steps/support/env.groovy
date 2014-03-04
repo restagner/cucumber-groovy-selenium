@@ -2,6 +2,7 @@ package cucumber.steps.support
 
 import cucumber.api.groovy.Hooks
 import cucumber.helpers.MyDSL
+import cucumber.helpers.TestEnvironment
 import cucumber.runtime.ScenarioImpl
 import org.openqa.selenium.WebDriver
 

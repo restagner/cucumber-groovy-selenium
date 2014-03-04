@@ -1,4 +1,4 @@
-package cucumber.steps.support
+package cucumber.helpers
 
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.firefox.FirefoxDriver
@@ -25,6 +25,7 @@ class TestEnvironment {
 
     @SuppressWarnings("GrMethodMayBeStatic")
     private WebDriver loadSelenium() {
-        return new FirefoxDriver()
+        driver = new FirefoxDriver()
+        return driver
     }
 }
