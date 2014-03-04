@@ -15,7 +15,7 @@ class CustomWorld {
     CustomWorld() {
         testEnvironment = new TestEnvironment()
         driver = testEnvironment.loadEnvironment()
-        myDSL = new MyDSL(driver)
+        myDSL = new MyDSL(testEnvironment)
     }
 
 }

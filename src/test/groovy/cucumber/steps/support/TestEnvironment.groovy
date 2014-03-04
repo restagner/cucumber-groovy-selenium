@@ -5,6 +5,7 @@ import org.openqa.selenium.firefox.FirefoxDriver
 
 
 class TestEnvironment {
+    WebDriver driver
 
     TestEnvironment() {}
 

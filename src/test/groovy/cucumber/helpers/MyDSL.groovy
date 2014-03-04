@@ -1,18 +1,19 @@
 package cucumber.helpers
 
 import cucumber.pages.GoogleHomePage
+import cucumber.steps.support.TestEnvironment
 import org.openqa.selenium.By
 import org.openqa.selenium.WebDriver
 
 
 class MyDSL {
-    def name
-    WebDriver driver
+    final TestEnvironment testEnvironment
+    final WebDriver driver
     private GoogleHomePage googleHomePage
 
-    MyDSL(WebDriver webDriver) {
-        name = 'My DSL class'
-        driver = webDriver
+    MyDSL(TestEnvironment tstEnv) {
+        testEnvironment = tstEnv
+        driver = testEnvironment.driver
         googleHomePage = new GoogleHomePage(driver)
     }
 
@@ -30,5 +31,9 @@ class MyDSL {
 
     String getThePageTitle() {
         googleHomePage.getPageTitle()
+    }
+
+    void exampleUseOfTestEnvironmentInMethod() {
+        googleHomePage.methodThatAcceptsTestEnvironment(testEnvironment)
     }
 }
