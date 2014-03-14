@@ -8,6 +8,7 @@ import org.junit.runner.RunWith
         , features = ["classpath:features"]
         , glue = ["src/test/groovy/cucumber/steps"]
         , tags = ["~@manual"]
+        , dotcumber = ".cucumber"
 )
 class RunCucumberITCase {
 }
