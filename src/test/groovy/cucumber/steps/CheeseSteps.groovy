@@ -17,6 +17,7 @@ When(~'^click the Submit button$') { ->
     myDSL.clickSubmitButton()
 }
 
-Then(~'^the page title returned is "([^"]*)"$') { String pageTitle ->
-    assert pageTitle == myDSL.getThePageTitle() : "The expected page title, '$pageTitle', does not match the actual"
+Then(~'^the page title returned is "([^"]*)"$') { String expectedPageTitle ->
+    def actualPageTitle = myDSL.getThePageTitle()
+    assert expectedPageTitle == actualPageTitle : "The expected page title, '$expectedPageTitle', does not match the actual,'$actualPageTitle'"
 }

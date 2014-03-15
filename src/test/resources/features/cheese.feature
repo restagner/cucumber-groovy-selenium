@@ -16,5 +16,5 @@ Feature: For the love of cheese
     Given I am on Google home page
     When I enter the keyword of "Tinker Bell"
     And click the Submit button
-    Then the page title returned is "Tinker Bell"
+    Then the page title returned is "Tinker Bell - Google Search"
     
