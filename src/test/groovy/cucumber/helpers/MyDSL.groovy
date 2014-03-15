@@ -1,7 +1,6 @@
 package cucumber.helpers
 
 import cucumber.pages.GoogleHomePage
-import cucumber.steps.support.TestEnvironment
 import org.openqa.selenium.By
 import org.openqa.selenium.WebDriver
 

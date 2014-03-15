@@ -1,6 +1,6 @@
 package cucumber.pages
 
-import cucumber.steps.support.TestEnvironment
+import cucumber.helpers.TestEnvironment
 import org.openqa.selenium.By
 import org.openqa.selenium.WebDriver
 
