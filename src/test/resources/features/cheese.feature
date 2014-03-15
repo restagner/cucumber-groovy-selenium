@@ -17,6 +17,3 @@ Feature: For the love of cheese
     When I enter the keyword "Tinker Bell"
     Then the page returns searches for "Tinker Bell"
     
-    
-  Scenario:
-    
