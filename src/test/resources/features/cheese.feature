@@ -12,8 +12,9 @@ Feature: For the love of cheese
     And click the Submit button
     Then the page title returned is "Star Wars - Google Search"
         
-  Scenario: The search for tinker Bell
-    Given I am on firefox home page
-    When I enter the keyword "Tinker Bell"
-    Then the page returns searches for "Tinker Bell"
+  Scenario: The search for Tinker Bell
+    Given I am on Google home page
+    When I enter the keyword of "Tinker Bell"
+    And click the Submit button
+    Then the page title returned is "Tinker Bell"
     
