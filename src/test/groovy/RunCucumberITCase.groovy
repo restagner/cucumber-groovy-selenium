@@ -1,8 +1,9 @@
 import cucumber.api.junit.Cucumber
+import cucumber.api.CucumberOptions
 import org.junit.runner.RunWith
 
 @RunWith(Cucumber.class)
-@Cucumber.Options(
+@CucumberOptions (
         format = ["pretty"]
         , monochrome = true
         , features = ["classpath:features"]
