@@ -24,3 +24,6 @@ Feature: For the love of cheese
     And click the Submit button
     Then the page title returned is "Mickey Mouse - Google Search"
     
+  Scenario: My test scenario
+    Given something
+    
