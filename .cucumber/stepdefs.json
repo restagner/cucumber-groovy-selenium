@@ -1,0 +1,106 @@
+[
+  {
+    "steps": [
+      {
+        "name": "I am on Google home page",
+        "args": []
+      }
+    ],
+    "source": "^I am on Google home page$",
+    "flags": ""
+  },
+  {
+    "steps": [
+      {
+        "name": "I enter the keyword of \"Cheese\"",
+        "args": [
+          {
+            "offset": 24,
+            "val": "Cheese"
+          }
+        ]
+      },
+      {
+        "name": "I enter the keyword of \"Mickey Mouse\"",
+        "args": [
+          {
+            "offset": 24,
+            "val": "Mickey Mouse"
+          }
+        ]
+      },
+      {
+        "name": "I enter the keyword of \"Star Wars\"",
+        "args": [
+          {
+            "offset": 24,
+            "val": "Star Wars"
+          }
+        ]
+      },
+      {
+        "name": "I enter the keyword of \"Tinker Bell\"",
+        "args": [
+          {
+            "offset": 24,
+            "val": "Tinker Bell"
+          }
+        ]
+      }
+    ],
+    "source": "^I enter the keyword of \"([^\"]*)\"$",
+    "flags": ""
+  },
+  {
+    "steps": [
+      {
+        "name": "click the Submit button",
+        "args": []
+      }
+    ],
+    "source": "^click the Submit button$",
+    "flags": ""
+  },
+  {
+    "steps": [
+      {
+        "name": "the page title returned is \"Cheese - Google Search\"",
+        "args": [
+          {
+            "offset": 28,
+            "val": "Cheese - Google Search"
+          }
+        ]
+      },
+      {
+        "name": "the page title returned is \"Mickey Mouse - Google Search\"",
+        "args": [
+          {
+            "offset": 28,
+            "val": "Mickey Mouse - Google Search"
+          }
+        ]
+      },
+      {
+        "name": "the page title returned is \"Star Wars - Google Search\"",
+        "args": [
+          {
+            "offset": 28,
+            "val": "Star Wars - Google Search"
+          }
+        ]
+      },
+      {
+        "name": "the page title returned is \"Tinker Bell - Google Search\"",
+        "args": [
+          {
+            "offset": 28,
+            "val": "Tinker Bell - Google Search"
+          }
+        ]
+      }
+    ],
+    "source": "^the page title returned is \"([^\"]*)\"$",
+    "flags": ""
+  }
+]
