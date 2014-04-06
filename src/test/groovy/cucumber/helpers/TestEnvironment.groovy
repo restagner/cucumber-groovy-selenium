@@ -20,7 +20,25 @@ class TestEnvironment {
     }
 
     private void loadConfiguration() {
-        // load config file
+        def testDataConfigFile = 'src/test/resources/config/testdata.config.groovy'
+        ConfigObject conf = new ConfigSlurper().parse(new File(testDataConfigFile).toURI().toURL())
+        Map config = conf.flatten()
+
+        println "--------- Test data read from $testDataConfigFile\n\n"
+        User cheryl = config.get('testdata.users.cheryl') as User
+        println "\t\tCheryl's Hub Id  = ${cheryl.hubId}"
+        println "\t\tCheryl's Entitlements = ${cheryl.entitlements}\n"
+
+        User patrick = config.get('testdata.users.patrick') as User
+        println "\t\tPatrick's Hub Id = ${patrick.hubId}"
+        println "\t\tPatricks's Entitlements = ${patrick.entitlements}\n"
+
+        User jack = config.get('testdata.users.jack') as User
+        jack.hubId = 'SCALJ'
+        jack.password = 'jack'
+        println "\t\tJack's Hub Id    = ${jack.hubId}"
+        println "\t\tJacks's Entitlements = ${jack.entitlements}\n"
+        println "--------------------------------------------------------------------------\n"
     }
 
     @SuppressWarnings("GrMethodMayBeStatic")

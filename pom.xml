@@ -11,7 +11,7 @@
         <gmavenplus.version>1.0</gmavenplus.version>
         <groovy.version>2.2.1</groovy.version>
         <selenium.version>2.40.0</selenium.version>
-        <cucumber.version>1.1.6-SNAPSHOT</cucumber.version>
+        <cucumber.version>1.1.6</cucumber.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!--
             Setting the output encoding property to UTF-8 avoids those pesky
