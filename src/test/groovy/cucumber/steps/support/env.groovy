@@ -2,7 +2,7 @@ package cucumber.steps.support
 
 import cucumber.api.groovy.Hooks
 import cucumber.helpers.MyDSL
-import cucumber.helpers.TestEnvironment
+import cucumber.environment.TestEnvironment
 import cucumber.runtime.ScenarioImpl
 import org.openqa.selenium.WebDriver
 
@@ -28,6 +28,10 @@ World {
 Before() {
     println "BEFORE hook called"
     println "WEB DRIVER SELECTED: ${driver.class.simpleName}"
+}
+
+Before("@pending_fix") { ScenarioImpl scenario ->
+    MyDSL.logWarnMessage("Scenario = '${scenario.name}' is pending a fix")
 }
 
 After() { ScenarioImpl scenario ->

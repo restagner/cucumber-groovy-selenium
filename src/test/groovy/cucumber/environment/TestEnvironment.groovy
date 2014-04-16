@@ -1,7 +1,10 @@
-package cucumber.helpers
+package cucumber.environment
 
+import cucumber.eventlistener.MyWebDriverEventListener
+import cucumber.helpers.User
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.firefox.FirefoxDriver
+import org.openqa.selenium.support.events.EventFiringWebDriver
 
 
 class TestEnvironment {
@@ -19,6 +22,7 @@ class TestEnvironment {
         // read from command line
     }
 
+    @SuppressWarnings("GrMethodMayBeStatic")
     private void loadConfiguration() {
         def testDataConfigFile = 'src/test/resources/config/testdata.config.groovy'
         ConfigObject conf = new ConfigSlurper().parse(new File(testDataConfigFile).toURI().toURL())
@@ -43,7 +47,7 @@ class TestEnvironment {
 
     @SuppressWarnings("GrMethodMayBeStatic")
     private WebDriver loadSelenium() {
-        driver = new FirefoxDriver()
+        driver = new EventFiringWebDriver(new FirefoxDriver()).register(new MyWebDriverEventListener())
         return driver
     }
 }

@@ -2,6 +2,16 @@
   {
     "steps": [
       {
+        "name": "I act on it",
+        "args": []
+      }
+    ],
+    "source": "^I act on it$",
+    "flags": ""
+  },
+  {
+    "steps": [
+      {
         "name": "I am on Google home page",
         "args": []
       }
@@ -49,6 +59,26 @@
       }
     ],
     "source": "^I enter the keyword of \"([^\"]*)\"$",
+    "flags": ""
+  },
+  {
+    "steps": [
+      {
+        "name": "I have something",
+        "args": []
+      }
+    ],
+    "source": "^I have something$",
+    "flags": ""
+  },
+  {
+    "steps": [
+      {
+        "name": "I should see something else",
+        "args": []
+      }
+    ],
+    "source": "^I should see something else$",
     "flags": ""
   },
   {
