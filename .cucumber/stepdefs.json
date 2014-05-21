@@ -94,11 +94,11 @@
   {
     "steps": [
       {
-        "name": "the page title returned is \"Cheese - Google Search\"",
+        "name": "the page title returned is \"Hello - Google Search\"",
         "args": [
           {
             "offset": 28,
-            "val": "Cheese - Google Search"
+            "val": "Hello - Google Search"
           }
         ]
       },
