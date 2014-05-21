@@ -11,7 +11,8 @@
         <gmavenplus.version>1.0</gmavenplus.version>
         <groovy.version>2.2.1</groovy.version>
         <selenium.version>2.40.0</selenium.version>
-        <cucumber.version>1.1.6</cucumber.version>
+        <cucumber.version>1.1.7</cucumber.version>
+		<cucumber.pro.version>1.0.5</cucumber.pro.version>
         <slf4j.version>1.7.2</slf4j.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!--
@@ -71,6 +72,12 @@
             <version>${cucumber.version}</version>
             <scope>test</scope>
         </dependency>
+		<dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-pro</artifactId>
+			<version>${cucumber.pro.version}</version>
+            <scope>test</scope>
+        </dependency>		
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
