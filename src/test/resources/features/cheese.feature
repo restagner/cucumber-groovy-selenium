@@ -18,7 +18,7 @@ Feature: For the love of cheese
     And click the Submit button
     Then the page title returned is "Tinker Bell - Google Search"
 
-  @pending_fix
+  @pending
   Scenario: My test scenario
     Given I have something
     When I act on it

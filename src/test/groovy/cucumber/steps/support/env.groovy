@@ -30,7 +30,7 @@ Before() {
     println "WEB DRIVER SELECTED: ${driver.class.simpleName}"
 }
 
-Before("@pending_fix") { ScenarioImpl scenario ->
+Before("@pending") { ScenarioImpl scenario ->
     MyDSL.logWarnMessage("Scenario = '${scenario.name}' is pending a fix")
 }
 
