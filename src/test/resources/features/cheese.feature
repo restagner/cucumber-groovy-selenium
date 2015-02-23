@@ -4,7 +4,7 @@ Feature: For the love of cheese
     Given I am on Google home page
     When I enter the keyword of "Cheese"
     And click the Submit button
-    Then the page title returned is "Hello - Google Search"
+    Then the page title returned is "Cheese - Google Search"
 
   Scenario: The search for Star Wars
     Given I am on Google home page
@@ -18,7 +18,7 @@ Feature: For the love of cheese
     And click the Submit button
     Then the page title returned is "Tinker Bell - Google Search"
 
-  @pending
+  @manual
   Scenario: My test scenario
     Given I have something
     When I act on it
