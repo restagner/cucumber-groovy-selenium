@@ -1,7 +1,14 @@
+## 1.2.0
+* bumped versions of the following
+    * groovy to 2.4.4
+    * selenium to 2.47.1
+    * cucumber to 1.2.4
+    * gmavenPlus to 1.5
+
 ## 1.1.0
 * added HISTORY.md file
 * bumped version of groovy to 2.4.1
-* bumped version of selenium to 3.44.0
+* bumped version of selenium to 2.44.0
 * bumped version of cucumber to 1.2.2
 * configured cucumber options to also use the junit formatter
 * removed the `.cucumber` directory -- this is no longer supported in the latest version of cucumber
