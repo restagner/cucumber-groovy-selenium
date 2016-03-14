@@ -30,3 +30,14 @@ Feature: For the love of cheese
     And click the Submit button
     Then the page title returned is "Mickey Mouse - Google Search"
 
+  @regression
+  Scenario Outline: The search for <keyword>
+    Given I am on Google home page
+    When I enter the keyword of "<keyword>"
+    And click the Submit button
+    Then the page title returned is "<title>"
+
+    Examples: Google Search
+    | keyword         | title                           |
+    | Marvel Avengers | Marvel Avengers - Google Search |
+    | Daredevil       | Daredevil - Google Search       |
