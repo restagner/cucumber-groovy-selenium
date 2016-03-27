@@ -14,6 +14,8 @@
         <cucumber.version>1.2.4</cucumber.version>
 		<cucumber.pro.version>1.0.5</cucumber.pro.version>
         <slf4j.version>1.7.2</slf4j.version>
+        <pmd.version>3.6</pmd.version>
+        <jxr.version>2.5</jxr.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!--
             Setting the output encoding property to UTF-8 avoids those pesky
@@ -57,8 +59,40 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-pmd-plugin</artifactId>
+                <version>${pmd.version}</version>
+                <configuration>
+                    <includeTests>true</includeTests>
+                </configuration>
+            </plugin>
+            <!-- JXR Plugin is required dependency for the PMD Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jxr-plugin</artifactId>
+                <version>${jxr.version}</version>
+            </plugin>
         </plugins>
     </build>
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-pmd-plugin</artifactId>
+                <version>${pmd.version}</version>
+                <configuration>
+                    <includeTests>true</includeTests>
+                </configuration>
+            </plugin>
+            <!-- JXR Plugin is required dependency for the PMD Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jxr-plugin</artifactId>
+                <version>${jxr.version}</version>
+            </plugin>
+        </plugins>
+    </reporting>
     <dependencies>
         <dependency>
             <groupId>info.cukes</groupId>
