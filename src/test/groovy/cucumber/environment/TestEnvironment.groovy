@@ -49,8 +49,8 @@ class TestEnvironment {
 
     @SuppressWarnings("GrMethodMayBeStatic")
     private WebDriver loadSelenium() {
-//        driver = new EventFiringWebDriver(new FirefoxDriver()).register(new MyWebDriverEventListener())
-        driver = new EventFiringWebDriver(new HtmlUnitDriver(true)).register(new MyWebDriverEventListener())
+        driver = new EventFiringWebDriver(new FirefoxDriver()).register(new MyWebDriverEventListener())
+//        driver = new EventFiringWebDriver(new HtmlUnitDriver(true)).register(new MyWebDriverEventListener())
         return driver
     }
 }
