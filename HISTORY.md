@@ -1,3 +1,8 @@
+## 1.3.0
+* bumped versions of the following
+    * groovy to 2.4.7
+    * selenium to 2.53.0
+
 ## 1.2.0
 * bumped versions of the following
     * groovy to 2.4.4

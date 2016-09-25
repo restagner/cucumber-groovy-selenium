@@ -9,6 +9,12 @@ import org.openqa.selenium.support.events.WebDriverEventListener
 @Slf4j
 class MyWebDriverEventListener implements WebDriverEventListener {
     @Override
+    void beforeNavigateRefresh(WebDriver webDriver) {}
+
+    @Override
+    void afterNavigateRefresh(WebDriver webDriver) {}
+
+    @Override
     void beforeNavigateTo(String s, WebDriver webDriver) {
         log.info("Navigating to '{}'", s)
     }
