@@ -2,6 +2,7 @@
 * bumped versions of the following
     * groovy to 2.4.7
     * selenium to 2.53.0
+    * the upgrade to Selenium required implementing `beforeNavigateRefresh()` and `afterNavigateRefresh()` in the MyWebDriverEventListener.  It appears that the API for `WebDriverEventListener` has changed.
 
 ## 1.2.0
 * bumped versions of the following

@@ -44,6 +44,14 @@ class MyWebDriverEventListener implements WebDriverEventListener {
         log.info("Navigated forward to '{}'", webDriver.currentUrl)
     }
 
+    void beforeNavigateRefresh(WebDriver webDriver) {
+
+    }
+
+    void afterNavigateRefresh(WebDriver webDriver) {
+
+    }
+
     @Override
     void beforeFindBy(By by, WebElement webElement, WebDriver webDriver) {
         if (webElement != null) {
