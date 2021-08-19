@@ -4,7 +4,7 @@ To run the tests, simply type <code>mvn clean verify</code> from the command-lin
 
 ### Setup ChromeDriver
 
-1. download a copy of [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
+1. download a copy of [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads). **NOTE**: the ChromeDriver version should match your Chrome browser version
 2. create a directory on your file system. For example, on Mac `/Users/<user name>/chromedriver`. On Windows `C:/Users/<user name>/chromedriver`
 3. copy the `.zip` file downloaded in step 1 into the directory created in step 2
 4. unzip the file
