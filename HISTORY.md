@@ -1,3 +1,8 @@
+## 1.4.0
+* bumped version of cucumber to 1.2.5
+* replaced use of FirefoxDriver with ChromeDriver
+* included instructions on setting up ChromeDriver
+
 ## 1.3.0
 * bumped versions of the following
     * groovy to 2.4.7

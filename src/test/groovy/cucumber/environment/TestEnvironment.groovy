@@ -3,7 +3,7 @@ package cucumber.environment
 import cucumber.eventlistener.MyWebDriverEventListener
 import cucumber.helpers.User
 import org.openqa.selenium.WebDriver
-import org.openqa.selenium.firefox.FirefoxDriver
+import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.support.events.EventFiringWebDriver
 
 
@@ -47,7 +47,7 @@ class TestEnvironment {
 
     @SuppressWarnings("GrMethodMayBeStatic")
     private WebDriver loadSelenium() {
-        driver = new EventFiringWebDriver(new FirefoxDriver()).register(new MyWebDriverEventListener())
+        driver = new EventFiringWebDriver(new ChromeDriver()).register(new MyWebDriverEventListener())
         return driver
     }
 }
