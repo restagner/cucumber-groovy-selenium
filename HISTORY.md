@@ -1,3 +1,6 @@
+## 1.4.1
+* bumped version of junit to 4.13.1
+
 ## 1.4.0
 * bumped version of cucumber to 1.2.5
 * replaced use of FirefoxDriver with ChromeDriver

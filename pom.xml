@@ -6,7 +6,7 @@
 
     <groupId>org.stagsplace.cuke.se</groupId>
     <artifactId>cucumber-groovy-selenium</artifactId>
-    <version>1.4.0</version>
+    <version>1.4.1</version>
     <properties>
         <gmavenplus.version>1.5</gmavenplus.version>
         <groovy.version>2.4.7</groovy.version>
