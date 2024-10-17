@@ -9,7 +9,7 @@
     <version>1.4.1</version>
     <properties>
         <gmavenplus.version>1.5</gmavenplus.version>
-        <groovy.version>2.4.7</groovy.version>
+        <groovy.version>2.4.21</groovy.version>
         <selenium.version>2.53.0</selenium.version>
         <cucumber.version>1.2.5</cucumber.version>
         <slf4j.version>1.7.2</slf4j.version>
